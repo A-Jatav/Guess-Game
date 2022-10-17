@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Guess The Word Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h4 id="p1"></h4><span id="s1">0</span>
+        <br>
+        <h4 id="p2"></h4><span id="s2">0</span>
+        <div class="container">
+            <h1>Word Guessing Game</h1>
+            <br>
+            <h3 id="qt"></h3>
+            <br>
+            <h3 id="attt"></h3>
+            <div id="answer" class="col-lg-6">
+            </div>
+            <br>
+            <h2 id="sahi"></h2>
+            <br>
+            <input type="text" id="word" class="form-control" placeholder="Enter A Word Here For The Other Player To Guess">
+            <label class="btn-danger" id="hideit"><b>Send A Word That Is 5 Characters Long Or More And Please Don't Use The Spacebar While Typing</b></label>
+            <br>
+            <button onclick="send()" class="btn btn-primary" id="sendbutnxx">Send</button>
+        </div>
+        <script src="primary.js"></script>
+    </body>
+</html>

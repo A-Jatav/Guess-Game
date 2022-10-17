@@ -1,0 +1,18 @@
+#testbody{
+    color: aquamarine;
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.login_div1, .login_div2{
+    padding: 10px;
+    border-radius: 20px;
+    float: none;
+}
+
+#answer{
+    background-color: crimson;
+    border-style: dashed;
+    border-color: grey;
+    border-radius: 30px;
+}
