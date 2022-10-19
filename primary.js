@@ -12,6 +12,7 @@ document.getElementById("attt").innerHTML = "Answer Turn - "+playernamex2;
 wordxbl = "";
 function send(){
     document.getElementById("sahi").innerHTML = "";
+    document.getElementById("galat").innerHTML = "";
     document.getElementById("word").style = "display: none;"
     document.getElementById("hideit").style = "display: none;"
     document.getElementById("sendbutnxx").style = "display: none;"
@@ -53,6 +54,7 @@ function chk(){
     }
     else{
         document.getElementById("sahi").innerHTML = "WRONG ANSWER!";
+        document.getElementById("galat").innerHTML = "The word was "+wordxbl;
         document.getElementById("sahi").style = "color: red";
     }
     if(question_turn == "player1"){
