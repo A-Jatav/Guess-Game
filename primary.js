@@ -9,15 +9,21 @@ document.getElementById("s1").innerHTML = scorex1;
 document.getElementById("s2").innerHTML = scorex2;
 document.getElementById("qt").innerHTML = "Question Turn - "+playernamex1;
 document.getElementById("attt").innerHTML = "Answer Turn - "+playernamex2;
-wordxbl = "";
+var wordxbl = "";
+var wordxb = "";
+var hintx = "";
+var hintxl = "";
 function send(){
     document.getElementById("sahi").innerHTML = "";
     document.getElementById("galat").innerHTML = "";
+    document.getElementById("expose").style = "display: none;"
     document.getElementById("word").style = "display: none;"
     document.getElementById("hideit").style = "display: none;"
     document.getElementById("sendbutnxx").style = "display: none;"
-    var wordxb = document.getElementById("word").value
+    wordxb = document.getElementById("word").value
     wordxbl = wordxb.toLowerCase();
+    hintx = document.getElementById("expose").value;
+    hintxl = hintx.toLowerCase();
     var rcharat1 = wordxbl.charAt(1);
     var lenth = wordxbl.length;
     var rcharat2 = wordxbl.charAt(Math.floor(lenth / 2));
@@ -26,11 +32,14 @@ function send(){
     var replacecr2 = replacecr1.replace(rcharat2, "_");
     var replacecr3 = replacecr2.replace(rcharat3, "_");
     var lbl = "<h4 id='qst'>Q. "+replacecr3+"</h4>";
+    var hnt = "<br>Hint: <span id='hintdisplay'></span>"
     var txtbx = "<br>Answer:<input type='text' id='txtbox'>";
     var butn = "<br><br><button onclick='chk()' class='btn-success'>Check</button><br>";
-    var final = lbl + txtbx + butn;
+    var final = lbl + hnt + txtbx + butn;
     document.getElementById("word").value = "";
+    document.getElementById("expose").value = "";
     document.getElementById("answer").innerHTML = final;
+    document.getElementById("hintdisplay").innerHTML = hintxl;
 };
 var question_turn = "player1";
 var answer_turn = "player2";
