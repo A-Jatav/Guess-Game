@@ -34,7 +34,7 @@ function send() {
     var lbl = "<h4 id='qst'>Q. " + replacecr3 + "</h4>";
     var hnt = "<br>Hint: <span id='hintdisplay'></span>"
     var txtbx = "<br>Answer:<input type='text' id='txtbox'>";
-    var butn = "<br><br><button onclick='chk()' class='btn-success'>Check</button><br>";
+    var butn = "<br><br><button onclick='chk()' class='btn-success'>Check</button><br><br>";
     var final = lbl + hnt + txtbx + butn;
     document.getElementById("word").value = "";
     document.getElementById("expose").value = "";
